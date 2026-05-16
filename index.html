@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Galaxy Tech</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      margin: 0;
+      overflow-x: hidden;
+      background: black;
+      font-family: Arial, sans-serif;
+    }
+
+    .stars {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background:
+        radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 4px);
+      background-size: 200px 200px;
+      animation: moveStars 60s linear infinite;
+      opacity: 0.4;
+    }
+
+    @keyframes moveStars {
+      from { transform: translateY(0); }
+      to { transform: translateY(-200px); }
+    }
+  </style>
+</head>
+
+<body class="text-white">
+
+<div class="stars"></div>
+
+<section class="relative min-h-screen flex items-center justify-center text-center px-6">
+
+  <div class="absolute w-96 h-96 bg-cyan-500 rounded-full blur-3xl opacity-20"></div>
+  <div class="absolute w-96 h-96 bg-purple-500 rounded-full blur-3xl opacity-20 right-20 top-40"></div>
+
+  <div class="relative z-10 max-w-4xl">
+
+    <h1 class="text-6xl md:text-8xl font-extrabold mb-6 bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+      Digital Galaxy Tech
+    </h1>
+
+    <p class="text-xl text-gray-300 mb-10 leading-relaxed">
+      Building futuristic digital experiences for the next generation.
+    </p>
+
+    <div class="flex flex-col sm:flex-row gap-5 justify-center">
+      <button class="px-8 py-4 rounded-2xl bg-gradient-to-r from-cyan-500 to-purple-600 text-lg font-semibold hover:scale-105 transition">
+        Launch Project
+      </button>
+
+      <button class="px-8 py-4 rounded-2xl border border-white/20 bg-white/10 backdrop-blur-md hover:bg-white/20 transition">
+        Explore Services
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<section class="py-24 px-6 bg-[#050816]">
+
+  <div class="max-w-6xl mx-auto text-center mb-16">
+    <h2 class="text-5xl font-bold mb-6">
+      Our Services
+    </h2>
+
+    <p class="text-gray-400">
+      Powerful digital solutions designed for modern businesses.
+    </p>
+  </div>
+
+  <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+    <div class="p-8 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-md">
+      <h3 class="text-2xl font-bold mb-4">Web Development</h3>
+      <p class="text-gray-400">
+        Fast and modern websites with premium performance.
+      </p>
+    </div>
+
+    <div class="p-8 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-md">
+      <h3 class="text-2xl font-bold mb-4">UI/UX Design</h3>
+      <p class="text-gray-400">
+        Futuristic interfaces with smooth user experiences.
+      </p>
+    </div>
+
+    <div class="p-8 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-md">
+      <h3 class="text-2xl font-bold mb-4">AI Solutions</h3>
+      <p class="text-gray-400">
+        Automation and AI tools for business growth.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<footer class="py-10 text-center border-t border-white/10 bg-black">
+  <p class="text-gray-500">
+    © 2026 Digital Galaxy Tech — All Rights Reserved
+  </p>
+</footer>
+
+</body>
+</html>
